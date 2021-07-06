@@ -1,0 +1,28 @@
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    margin: 2rem 0 2rem 0;
+    align-items: center;
+}
+
+.book-container .book{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    border-radius: 3px;
+    height: 280px;
+}
+
+.book-container .book .book-delete {
+    background-color: red;
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
